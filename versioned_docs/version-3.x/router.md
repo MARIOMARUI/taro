@@ -41,7 +41,7 @@ import { getCurrentInstance } from '@tarojs/taro'
 import React, { Component } from 'react'
 
 export default class C extends Component {
-  componentDidMount () {
+  componentWillMount () {
     console.log(getCurrentInstance().router.params) // 输出 { id: 2, type: 'test' }
   }
 }
